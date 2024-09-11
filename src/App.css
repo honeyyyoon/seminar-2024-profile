@@ -1,10 +1,49 @@
+/* 기존 스타일을 유지하면서 새로운 스타일 추가 */
+
+/* 루트 컨테이너 스타일 수정 */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+  height: 100vh;
 }
 
+/* 새로운 app-container 스타일 */
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* 이미지 컨테이너 스타일 */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* 프로필 이미지 스타일 */
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 콘텐츠 컨테이너 스타일 */
+.content-container {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 기존 스타일 유지 */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +78,15 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.info-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.info-list li {
+  margin-bottom: 10px;
 }

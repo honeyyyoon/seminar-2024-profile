@@ -1,41 +1,37 @@
 import './App.css';
 
-import { useState } from 'react';
-
-import viteLogo from '/vite.svg';
-
-import reactLogo from './assets/react.svg';
+import honeyEmoji from './assets/honeyEmoji.png';
+import profileImage from './assets/profileImage.jpg';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button
-          onClick={() => {
-            setCount(count + 1);
-          }}
+    <div className="app-container">
+      <div className="image-container">
+        <a
+          href="https://www.instagram.com/honeyyyyyoon/"
+          target="_blank"
+          rel="noreferrer"
         >
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+          <img src={profileImage} className="profile-image" alt="Profile" />
+        </a>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <div className="content-container">
+        <a
+          href="https://www.instagram.com/honeyyyyyoon/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={honeyEmoji} className="logo react" alt="React logo" />
+        </a>
+        <h1>|| 윤 시 헌 ||</h1>
+        <ul className="info-list">
+          <li> 자유전공학부 22학번 </li>
+          <li> 컴퓨터공학과 경제학을 공부하고 있습니다 </li>
+          <li> 춤과 음악과 영화를 좋아합니다! </li>
+          <li> 이번 방학에 드럼을 배우기 시작했습니다 </li>
+        </ul>
+      </div>
+    </div>
   );
 }
 
